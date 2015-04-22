@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+	<PreferenceCategory
+	    android:title="Enable/Disable Notifications">
+	<CheckBoxPreference
+	    android:title="Enable Notifications"
+	    android:defaultValue="true"
+	    android:key="checkbox"
+	    android:summary="Check this box"/>    
+	    </PreferenceCategory>
+	    <PreferenceCategory
+	    android:title="Enable/Disable Location Service">
+	<CheckBoxPreference
+	    android:title="Enable Service"
+	    android:defaultValue="true"
+	    android:key="checkbox"
+	    android:summary="Check this box"/>    
+	    </PreferenceCategory>
+	    <PreferenceCategory
+	        android:title="Set notification Interval">
+	<ListPreference
+	   android:title="Set Interval"
+	   android:key="list"
+	   android:summary="Get Notification before specified interval"
+	   android:entries="@array/list"
+	   android:entryValues="@array/lvalues"
+	    />
+	</PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,23 @@
+<resources>
+
+    <string name="app_name">NotifyMe</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="notes">Notes \n Click \'Add Notes\' to add one.</string>
+    <string name="setlocation">This is Fragment 3</string>
+    <string name="monday">Monday Time Table \n Click \'Add Class\' to add one.</string>
+    <string name="tuesday">Tuesday Time Table \n Click \'Add Class\' to add one.</string>
+    <string name="wednesday">wednesday Time Table \n Click \'Add Class\' to add one.</string>
+    <string name="thursday">thursday Time Table \n Click \'Add Class\' to add one.</string>
+    <string name="friday">Friday Time Table \n Click \'Add Class\' to add one.</string>
+    <string name="saturday">Saturday Time Table \n Click \'Add Class\' to add one.</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="about">About Us</string>
+    <string name="imagedes"></string>
+    <string name="add_note">Add Note</string>
+    <string name="about_us">This is notifyMe Application and can be used to get location alerts on your phone</string>
+    <string name="add_item">Add Class</string>
+    <string name="delete_item">Delete Class</string>
+    <string name="add_class">Add Class</string>
+</resources>

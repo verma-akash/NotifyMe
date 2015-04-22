@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <GridLayout
+        android:id="@+id/gridLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:columnCount="2"
+        android:paddingTop="15dp" >
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_column="0"
+            android:layout_gravity="left|bottom"
+            android:layout_marginBottom="32dp"
+            android:layout_row="1"
+            android:ems="10"
+            android:hint="Name/Topic" />
+    </GridLayout>
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64dp"
+        android:ems="10"
+        android:hint="Subject" >
+
+        <requestFocus />
+    </EditText>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="350dp"
+        android:layout_height="2dp"
+        android:layout_below="@+id/editText2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@color/list_divider"
+        android:contentDescription="Line" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView2"
+        android:layout_alignLeft="@+id/imageView2"
+        android:layout_marginBottom="6dp"
+        android:textStyle="bold"
+        android:text="Date and Time" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ImageView01"
+        android:layout_alignLeft="@+id/ImageView01"
+        android:layout_marginBottom="6dp"
+        android:textStyle="bold"
+        android:text="NOTES" />
+
+    <ImageView
+        android:id="@+id/ImageView01"
+        android:layout_width="350dp"
+        android:layout_height="2dp"
+        android:layout_alignLeft="@+id/imageView2"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="152dp"
+        android:background="@color/list_divider"
+        android:contentDescription="Line" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/ImageView01"
+        android:layout_marginTop="13dp"
+        android:autoText="True"
+        android:ems="10"
+        android:hint="Enter Notes" 
+        android:lines="5"
+        android:maxLines="5"
+        android:gravity="top"/>
+    <TextView
+        android:id="@+id/txt_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView2"
+        android:layout_below="@+id/imageView2"
+        android:layout_marginTop="29dp"
+        android:text="Date"
+        android:textSize="21sp" />
+
+    <TextView
+        android:id="@+id/txt_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txt_date"
+        android:layout_centerVertical="true"
+        android:text="Time" 
+        android:textSize="21sp" />
+
+    <Button
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txt_date"
+        android:layout_alignBottom="@+id/txt_date"
+        android:layout_alignRight="@+id/imageView2"
+        android:layout_marginRight="15dp"
+        android:text="Date" />
+
+    <Button
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/date"
+        android:layout_centerVertical="true"
+        android:text="Time" />
+
+</RelativeLayout>

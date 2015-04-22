@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/editText2"
+        android:digits="qwertyuiopasdfghjklzxcvbnm. QWERTYUIOPASDFGHJKLZXCVBNM123456789-_#"
+        android:hint="Subject"
+        android:maxLength="20"
+        android:singleLine="True" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/timePicker1"
+        android:layout_below="@+id/editText2"
+        android:layout_marginTop="22dp"
+        android:singleLine="True"
+        android:maxLength="10"
+        android:hint="Enter Room No." />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/editText3"
+        android:layout_below="@+id/editText1"
+        android:layout_marginTop="19dp"
+        android:singleLine="True"
+        android:maxLength="15"
+        android:inputType="text"
+        android:digits="qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM "
+        android:hint="Faculty" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView2"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="14dp"
+        android:text="Set Time"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="340dp"
+        android:layout_height="2dp"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/editText3"
+        android:layout_marginTop="46dp"
+        android:background="@color/list_divider" />
+
+    <TimePicker
+        android:id="@+id/timePicker1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/imageView2" />
+
+    <ToggleButton
+        android:id="@+id/tut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="14dp"
+        android:textOn="TUT"
+        android:textOff="TUT"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/timePicker1"
+        android:text="Choose Day"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="340dp"
+        android:layout_height="2dp"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:background="@color/list_divider" />
+
+    <ToggleButton
+        android:id="@+id/prac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editText2"
+        android:layout_alignBottom="@+id/editText2"
+        android:layout_alignLeft="@+id/tut"
+        android:text="ToggleButton" 
+        android:textOn="PRAC"
+        android:textOff="PRAC"/>
+
+    <ToggleButton
+        android:id="@+id/lec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/prac"
+        android:layout_alignTop="@+id/editText3"
+        android:text="ToggleButton"
+        android:textOn="LEC"
+        android:textOff="LEC" />
+
+    <ToggleButton
+        android:id="@+id/mon"
+        android:layout_width="58dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView2"
+        android:text="ToggleButton"
+        android:textOff="MON"
+        android:textOn="MON" />
+
+    <ToggleButton
+        android:id="@+id/sat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/wed"
+        android:layout_alignBottom="@+id/wed"
+        android:layout_alignParentRight="true"
+        android:text="ToggleButton"
+        android:textOff="SAT"
+        android:textOn="SAT" />
+
+    <ToggleButton
+        android:id="@+id/fri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/sat"
+        android:layout_alignBottom="@+id/sat"
+        android:layout_toLeftOf="@+id/sat"
+        android:text="ToggleButton"
+        android:textOff="FRI"
+        android:textOn="FRI" />
+
+    <ToggleButton
+        android:id="@+id/thu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/fri"
+        android:layout_alignBottom="@+id/fri"
+        android:layout_toLeftOf="@+id/fri"
+        android:text="ToggleButton"
+        android:textOff="THU"
+        android:textOn="THU" />
+
+    <ToggleButton
+        android:id="@+id/wed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/mon"
+        android:layout_alignBottom="@+id/mon"
+        android:layout_toLeftOf="@+id/thu"
+        android:text="ToggleButton"
+        android:textOff="WED"
+        android:textOn="WED" />
+
+    <ToggleButton
+        android:id="@+id/tue"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/wed"
+        android:layout_alignBottom="@+id/wed"
+        android:layout_toLeftOf="@+id/wed"
+        android:text="ToggleButton"
+        android:textOff="TUE"
+        android:textOn="TUE" />
+
+   
+
+</RelativeLayout>
+
