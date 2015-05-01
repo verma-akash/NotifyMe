@@ -1,6 +1,6 @@
 # NotifyMe
 
-a location based time table notification app.
+a location based time table notification app.(Location+time based notification)
 
 ## Summary
 
